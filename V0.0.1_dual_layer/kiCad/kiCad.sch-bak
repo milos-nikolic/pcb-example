@@ -1,0 +1,174 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Amplifier_Operational:OP07 U1
+U 1 1 5F1BB1AF
+P 5250 3250
+F 0 "U1" H 5594 3296 50  0000 L CNN
+F 1 "OP07" H 5594 3205 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W10.16mm_LongPads" H 5300 3300 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/OP07.pdf" H 5300 3400 50  0001 C CNN
+	1    5250 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J3
+U 1 1 5F1BBCEE
+P 6700 3250
+F 0 "J3" H 6780 3242 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 6780 3151 50  0000 L CNN
+F 2 "" H 6700 3250 50  0001 C CNN
+F 3 "~" H 6700 3250 50  0001 C CNN
+	1    6700 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x03 J1
+U 1 1 5F1BC39F
+P 3450 2900
+F 0 "J1" H 3368 2575 50  0000 C CNN
+F 1 "Screw_Terminal_01x03" H 3368 2666 50  0000 C CNN
+F 2 "" H 3450 2900 50  0001 C CNN
+F 3 "~" H 3450 2900 50  0001 C CNN
+	1    3450 2900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J2
+U 1 1 5F1BE393
+P 3550 3600
+F 0 "J2" H 3468 3275 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 3468 3366 50  0000 C CNN
+F 2 "" H 3550 3600 50  0001 C CNN
+F 3 "~" H 3550 3600 50  0001 C CNN
+	1    3550 3600
+	-1   0    0    1   
+$EndComp
+Text GLabel 4000 3000 2    50   Input ~ 0
+-5V
+Text GLabel 4000 2800 2    50   Input ~ 0
++5V
+Text GLabel 4000 2900 2    50   Input ~ 0
+GND
+Wire Wire Line
+	3650 2800 4000 2800
+Wire Wire Line
+	3650 3000 4000 3000
+Wire Wire Line
+	3650 2900 4000 2900
+Text GLabel 6300 3350 0    50   Input ~ 0
+GND
+Wire Wire Line
+	6300 3350 6500 3350
+Wire Wire Line
+	5550 3250 5850 3250
+Text GLabel 3900 3600 2    50   Input ~ 0
+GND
+Wire Wire Line
+	3750 3600 3900 3600
+Text GLabel 5200 3650 2    50   Input ~ 0
+-5V
+Text GLabel 5200 2850 2    50   Input ~ 0
++5V
+Wire Wire Line
+	5200 2850 5150 2850
+Wire Wire Line
+	5150 2850 5150 2950
+Wire Wire Line
+	5150 3550 5150 3650
+Wire Wire Line
+	5150 3650 5200 3650
+$Comp
+L Device:R R2
+U 1 1 5F1C0828
+P 5050 3800
+F 0 "R2" V 5257 3800 50  0000 C CNN
+F 1 "R" V 5166 3800 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4980 3800 50  0001 C CNN
+F 3 "~" H 5050 3800 50  0001 C CNN
+	1    5050 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5F1C1167
+P 4600 3350
+F 0 "R1" V 4807 3350 50  0000 C CNN
+F 1 "R" V 4716 3350 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4530 3350 50  0001 C CNN
+F 3 "~" H 4600 3350 50  0001 C CNN
+	1    4600 3350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3750 3500 3800 3500
+Wire Wire Line
+	3800 3500 3800 3150
+Wire Wire Line
+	3800 3150 4950 3150
+Text GLabel 4300 3350 0    50   Input ~ 0
+GND
+Wire Wire Line
+	4300 3350 4450 3350
+Wire Wire Line
+	4750 3350 4800 3350
+Wire Wire Line
+	4800 3350 4800 3800
+Wire Wire Line
+	4800 3800 4900 3800
+Connection ~ 4800 3350
+Wire Wire Line
+	4800 3350 4950 3350
+Wire Wire Line
+	5200 3800 5850 3800
+Wire Wire Line
+	5850 3800 5850 3250
+Connection ~ 5850 3250
+Wire Wire Line
+	5850 3250 6500 3250
+NoConn ~ 5250 3550
+NoConn ~ 5350 3550
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5F1C314E
+P 6200 2650
+F 0 "#FLG0101" H 6200 2725 50  0001 C CNN
+F 1 "PWR_FLAG" V 6200 2778 50  0000 L CNN
+F 2 "" H 6200 2650 50  0001 C CNN
+F 3 "~" H 6200 2650 50  0001 C CNN
+	1    6200 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5F1C3938
+P 6200 2800
+F 0 "#FLG0102" H 6200 2875 50  0001 C CNN
+F 1 "PWR_FLAG" V 6200 2928 50  0000 L CNN
+F 2 "" H 6200 2800 50  0001 C CNN
+F 3 "~" H 6200 2800 50  0001 C CNN
+	1    6200 2800
+	0    1    1    0   
+$EndComp
+Text GLabel 6100 2650 0    50   Input ~ 0
++5V
+Text GLabel 6100 2800 0    50   Input ~ 0
+-5V
+Wire Wire Line
+	6100 2650 6200 2650
+Wire Wire Line
+	6100 2800 6200 2800
+$EndSCHEMATC
