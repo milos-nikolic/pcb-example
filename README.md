@@ -1,4 +1,4 @@
-# This is masic pcb dezign example
+# This is basic pcb design example
 
 
 ## With dual-layer
